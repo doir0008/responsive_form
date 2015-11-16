@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.wrapper {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.75rem;
+}
+.masthead {
+    background-color: #2F5D7F;
+    padding: 1rem;
+    text-align: center;
+}
+.content {
+    padding: 2.5rem 0rem 0rem 0rem;
+    background-color: #0F7ACC;
+}
+h1 {
+    font-family: 'Lora', serif;
+    font-size: 2rem;
+    color: #FFF;
+    padding: 1.5rem;
+}
+p {
+    font-size: 0.9rem;
+    text-align: left;
+    padding: 1rem;
+    color: #FFF;
+}
+.formbox {
+    padding: 1rem;
+    background-color: #0F7ACC;
+}
+#btn {
+    width: 30%;
+    border: 5px solid #2F5D7F;
+    background-color: #FFF;
+    font-size: 1rem;
+}
+label {
+    display: none;
+    font-size: 1rem;
+}
+input, textarea {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    font-size: 0.75rem;
+}
+@media all and (min-width: 35em) and (max-width: 60em) {
+    label {
+        display: block;
+        padding: 2rem 0.75rem;
+    }
+    .formbox {
+        width: 50%;
+        float: left;
+    }
+    .content {
+        padding: 0;
+    }
+    #btn {
+        width: 30%;
+        font-size: 1rem;
+    }
+    .formbox:nth-child(5) {
+        width: 100%;
+    }
+    h1 {
+        font-size: 2.5rem;
+    }
+    p {
+        font-size: 1.5rem;
+    }
+}
+@media all and (min-width: 60em) {
+    .wrapper {
+        max-width: 1600px;
+    }
+    label {
+        display: block;
+        padding: 1rem 0.75rem;
+        width: 33%;
+        float: left;
+    }
+    input, textarea {
+        width: 67%;
+        float: left;
+    }
+    .formbox {
+        width: 50%;
+        float: left; 
+    }
+    #btn {
+        font-size: 1rem;
+    }
+    .formbox:nth-child(5), .formbox:nth-child(5) input {
+        width: 100%;
+    }
+    h1 {
+        font-size: 3rem;
+    }
+    p {
+        font-size: 2rem;
+    }
+}
